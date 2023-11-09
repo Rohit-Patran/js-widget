@@ -126,7 +126,7 @@ async function getCurrency()
 
 getCurrency()
 .then(currencies => {
-    console.log({curency : currencies})
+    
     let i = 0;
     while(i < currencies.length)
     {
@@ -147,7 +147,7 @@ async function getCoins()
             "Content-Type" : "application/json"
         }
     } 
-    console.log(currencyURL)
+    
     const response = await fetch(`${currencyURL}` , options);
     const coins = await response.json();
     return coins;
@@ -158,7 +158,7 @@ async function getCoins()
 
 getCoins()
 .then(coins => {
-    console.log(coins)
+    
     let i = 0;
     while(i < coins.length)
     {
@@ -179,7 +179,7 @@ async function coinDetails()
             "Content-Type" : "application/json"
         }
     } 
-    console.log(coinDetailsURL)
+    
     const response = await fetch(`${coinDetailsURL}` , options);
     const coinsDetails = await response.json();
     return coinsDetails;   
@@ -191,7 +191,7 @@ function getDetailsCoins()
     .then(coinDetails => {
         if(coinDetails.length > 0)
         {
-            console.log(coinDetails);
+            
             coinHeading.innerHTML = `<img src=${coinDetails[0].image} width='50px' height='50px'> ${coinDetails[0].name}`;
             coinPrice.innerHTML = `Current Price <br> <b>${coinDetails[0].current_price} ${currency.toUpperCase()}</b>`;
             coinMarketCap.innerHTML = `Market Cap <br> <b>${coinDetails[0].market_cap} ${currency.toUpperCase()}</b>`;
