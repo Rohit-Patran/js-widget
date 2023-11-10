@@ -47,7 +47,7 @@ styles.innerHTML = `
         width : 60%;
         display : block;
         margin : 0 auto;
-        background-color : rgba(0,0,0,0.1);
+        background-color : #F3EEEA;
         border-radius : 2vw;
         padding : 2vw;
         margin : 2vw auto;
@@ -80,7 +80,7 @@ styles.innerHTML = `
         outline : none;
         width : 20%;
         height : 5vh;
-        border: 2px solid rgba(0, 0 , 0, 0.2);
+        border: 2px solid #F5F7F8;
         border-radius : 0.2vw;
         font-size : 1vw; 
     }
